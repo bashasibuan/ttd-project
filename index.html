@@ -26,27 +26,35 @@
             const bagi2 = prompt(Masukkan Angka 2);
             const bagi = Math.round(parseFloat(bagi1)/ parseFloat(bagi2));
             alert(Hasil pembagian dari ${bagi1} dan ${bagi2} adalah ${bagi});
-
+            
         }
         else if(pesan === 4){
-            const kali1 = prompt(Masukkan Angka 1);
+    const kali1 = prompt(Masukkan Angka 1);
             const kali2 = prompt(Masukkan Angka 2);
             const kali = Math.round(parseFloat(kali1)*parseFloat(kali2));
             alert(Hasil perkalian  dari ${kali1} dan ${kali2} adalah ${kali});
             
         }
         else if(pesan === 5){
+            const pangkat = prompt(`Masukkan Angka `);
+            const hitung = Math.pow(pangkat,2)
+            alert(`Pangkat 2  dari ${pangkat} adalah ${hitung}`);  
 
         }
         else if(pesan === 6){
-
+            const akar = prompt(`Masukkan Angka `);
+            const hitung = Math.sqrt(akar,2)
+            alert(`Akar pangkat 2  dari ${akar} adalah ${hitung}`);
         }
         else if(pesan === 7){
-
+            const akar = prompt(`Masukkan Angka `);
+            const hitung = Math.sqrt(akar,3)
+            alert(`Akar pangkat 3  dari ${akar} adalah ${hitung}`);
         } else {
             alert("Ga ada di pilihan");
         }
         
     </script>
+    
 </body>
 </html>
