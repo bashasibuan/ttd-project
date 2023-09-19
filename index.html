@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        let pesan = prompt
+let pesan = prompt
         (`Pilih menu, Masukkan dalam angka: 
         \n1. Penjumlahan 
         \n2. Pengurangan 
@@ -17,45 +17,43 @@
         \n6. Akar Pangkat 2 
         \n7. Akar Pangkat 3`);
 
-
-        if (pesan === 1){
-            const tambah1 = prompt('Masukkan Angka 1');
-            const tambah2 = prompt('Masukkan Angka 2');
+        if (pesan == 1){
+            const tambah1 = prompt(`Masukkan Angka 1`);
+            const tambah2 = prompt(`Masukkan Angka 2`);
             const tambah = Math.round(parseFloat(tambah1) + parseFloat(tambah2));
             alert(`Hasil penjumlahan dari ${tambah1} dan ${tambah2} adalah ${tambah}`);
-
-        } else if(pesan === 2){
-            const kurang1 = prompt('Masukkan Angka 1');
-            const kurang2 = prompt('Masukkan Angka 2');
+        } else if(pesan == 2){
+            const kurang1 = prompt(`Masukkan Angka 1`);
+            const kurang2 = prompt(`Masukkan Angka 2`);
             const kurang = Math.round(parseFloat(kurang1) - parseFloat(kurang2));
             alert(`Hasil pengurangan dari ${kurang1} dan ${kurang2} adalah ${kurang}`);
-        
-        } else if(pesan === 3){
-            const bagi1 = prompt('Masukkan Angka 1');
-            const bagi2 = prompt('Masukkan Angka 2');
+
+        } else if(pesan == 3){
+            const bagi1 = prompt(`Masukkan Angka 1`);
+            const bagi2 = prompt(`Masukkan Angka 2`);
             const bagi = Math.round(parseFloat(bagi1)/ parseFloat(bagi2));
             alert(`Hasil pembagian dari ${bagi1} dan ${bagi2} adalah ${bagi}`);
             
         }
-        else if(pesan === 4){
+        else if(pesan == 4){
             const kali1 = prompt(`Masukkan Angka 1`);
             const kali2 = prompt(`Masukkan Angka 2`);
             const kali = Math.round(parseFloat(kali1)*parseFloat(kali2));
             alert(`Hasil perkalian  dari ${kali1} dan ${kali2} adalah ${kali}`);
-            
+           
         }
-        else if(pesan === 5){
+        else if(pesan == 5){
             const pangkat = prompt(`Masukkan Angka `);
             const hitung = Math.pow(pangkat,2)
-            alert(`Pangkat 2  dari ${pangkat} adalah ${hitung}`);  
-
+            alert(`Pangkat 2  dari ${pangkat} adalah ${hitung}`);      
         }
-        else if(pesan === 6){
+        else if(pesan == 6){
             const akar = prompt(`Masukkan Angka `);
             const hitung = Math.sqrt(akar,2)
             alert(`Akar pangkat 2  dari ${akar} adalah ${hitung}`);
+
         }
-        else if(pesan === 7){
+        else if(pesan == 7){
             const akar = prompt(`Masukkan Angka `);
             const hitung = Math.sqrt(akar,3)
             alert(`Akar pangkat 3  dari ${akar} adalah ${hitung}`);
